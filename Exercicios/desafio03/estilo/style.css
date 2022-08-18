@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'Wriggle';
+    src: url('/fonte/Wriggle-Regular.otf');
+}
+
+@font-face {
+    font-family: 'medium';
+    src: url('/fonte/Matter-Medium.otf');
+}
+
+@font-face {
+    font-family: 'mediumr';
+    src: url('/fonte/Matter-Regular.otf');
+}
+
+@font-face {
+    font-family: 'buduj';
+    src: url('/fonte/BudujSans-Medium.ttf');
+}
+
+:root {
+    --header: 'Wriggle';
+    --h1: 'medium';
+    --h2: 'mediumr';
+    --teste: 'buduj';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+header {
+    
+    background-color: #C7D9AD;
+    text-align: center;
+    
+}
+
+header > h1 {
+    font-family: var(--header);
+    font-size: 10em;
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+section.desc {
+    background-color: #e6e6e6;
+    font-family: var(--h2);
+    text-align: center;
+    font-size: 2.3em;
+    line-height: 2em;
+}
+
+section > h2 {
+    font-family: var(--teste);
+    font-size: 3em;
+    line-height: 2em;
+}
+
+section.normal1 {
+    background-color: #D9FF80;
+    color: rgb(39, 39, 39);
+}
+
+section.normal2 {
+    background-color: #D9FF80;
+    color: rgb(39, 39, 39);
+}
+
+section.normal3 {
+    background-color: #7F6CFF;
+    color: #D9FF80;
+}
+
+section.img {
+    min-height: 720px;
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url('/img/yea.jpg');
+    background-position: bottom center;
+    
+}
+
+section#img02 {
+    background-image: url('/img/paisage.jpg');
+    background-position: center top;
+}
